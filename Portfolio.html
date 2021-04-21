@@ -34,11 +34,24 @@ a[href^="tel"]::before {
     content: "📞 ";
 }
 
+.morecerti{
+  display: none;
+}
+@media (max-width: 750px) {
+
+.certi2{ display: None;
+}
+.morecerti{
+
+  display: block;
+}
+}
+
 </style>
 <body>
 
 <!-- Navbar -->
-<div class="w3-top">
+<div class="w3-top" style="position: sticky;">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="Portfolio.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
@@ -58,11 +71,11 @@ a[href^="tel"]::before {
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px; ">
   <a href="#me" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT ME</a>
   <a href="#Projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  <a href="#certifications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CERTIFICATIONS</a>
 </div>
 
 <!-- Page content -->
@@ -257,7 +270,7 @@ a[href^="tel"]::before {
     <div style="display: flex; justify-content: space-around; flex-wrap: wrap;  flex-direction: row;"> 
       
           <div>
-              <img src="img/Automate the boring stuff.jpg" alt="" class="certi" style=" width: 300px; height: auto;">
+              <img src="img/Automate the boring stuff.jpg" alt="" class="certi certi2" style=" width: 300px; height: auto;">
 
           </div>
           <div>
@@ -265,11 +278,11 @@ a[href^="tel"]::before {
 
           </div>
           <div>
-            <img src="img/gans.png" alt="" class="certi" style=" width: 300px; height: auto;">
+            <img src="img/gans.png" alt="" class="certi certi2" style=" width: 300px; height: auto;">
 
           </div>
           <div>
-            <img src="img/js.png" alt="" class="certi" style=" width: 300px; height: auto;">
+            <img src="img/js.png" alt="" class="certi certi2" style=" width: 300px; height: auto;">
 
           </div>
           <div>
@@ -277,7 +290,7 @@ a[href^="tel"]::before {
 
           </div>
           <div>
-            <img src="img/cnnkeras.png" alt="" class="certi" style=" width: 300px; height: auto;">
+            <img src="img/cnnkeras.png" alt="" class="certi certi2" style=" width: 300px; height: auto;">
 
           </div>
           <div>
@@ -285,22 +298,29 @@ a[href^="tel"]::before {
 
           </div>
           <div>
-            <img src="img/htmlcss.png" alt="" class="certi" style=" width: 300px; height: auto;">
+            <img src="img/htmlcss.png" alt="" class="certi certi2" style=" width: 300px; height: auto;">
 
           </div>
           <div>
-            <img src="img/py.png" alt="" class="certi" style=" width: 300px; height: auto;">
+            <img src="img/py.png" alt="" class="certi certi2" style=" width: 300px; height: auto;">
 
           </div>
           <div>
-            <img src="img/php.png" alt="" class="certi" style=" width: 300px; height: auto;">
+            <img src="img/php.png" alt="" class="certi certi2" style=" width: 300px; height: auto;">
 
           </div>
           <div>
-            <img src="img/matlab.png" alt="" class="certi" style=" width: 300px; height: auto;">
+            <img src="img/matlab.png" alt="" class="certi certi2" style=" width: 300px; height: auto;">
 
           </div>
           
+    </div>
+    <div class="morecerti">
+      <div>
+        <a href="certificate.html" target="_blank"><button>
+          Seem More
+        </button></a>
+      </div>
     </div>
   </div>
 
@@ -313,14 +333,14 @@ a[href^="tel"]::before {
         <h3>Rotaract Club Of Bombay Powai</h3>
         <p>2019 - Present</p>
         <a href="https://rotaract3141.org/" target="_blank">
-        <img src="https://rotaract3141.org/wp-content/uploads/2020/06/logo-red.png" alt="" style="margin-top: 50%; transform: translate(0,-50%);">
+        <img src="https://rotaract3141.org/wp-content/uploads/2020/06/logo-red.png" alt="" style="margin-top: 50%; transform: translate(0,-50%); width: 100%;">
       </a>
       </div>
       <div>
-        <h3>Tsec Codecell</h3>
+        <h3>Tsec CodeCell</h3>
         <p>2019 - 2020</p>
         <a href="http://www.tseccodecell.com/tsec-hacks/" target="_blank">
-        <img src="https://harshkapadia2.github.io/sample-contact-us-page/static/img/codecell_logo.svg" alt="" style="max-width: 300px;">
+        <img src="https://harshkapadia2.github.io/sample-contact-us-page/static/img/codecell_logo.svg" alt="" style="max-width: 300px; width: 100%;">
       </a>
       </div>
     </div>
@@ -361,7 +381,7 @@ a[href^="tel"]::before {
 <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=lake%20homes&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embed google maps wordpress</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div><!--img src="https://i.ytimg.com/vi/LBNctIlzE1I/maxresdefault.jpg" class="w3-image w3-greyscale-min" style="width:100%"-->
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge" style="margin-top:100%">
   <i class="fa fa-facebook-official w3-hover-opacity" style="font-size:36px"><a href="https://www.facebook.com/sparsh.nagpal2"> </a></i>
   <i class="fa fa-instagram w3-hover-opacity" style="font-size:36px"><a href="https://www.instagram.com/sparshyyy/"> </a></i>
   <i class="fa fa-github w3-hover-opacity" style="font-size:36px"><a href="https://github.com/0sparsh2"> </a></i>
